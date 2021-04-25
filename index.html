@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-body-pattern">
+
+  <!--Cabecera-->
+  <header id="header" class="h-20 bg-black text-white bebas xs:h-32">
+
+    <div class="container w-11/12 mx-auto flex flex-row xs:flex-col xs:h-20">
+      <div id="logo" class="flex-1  xs:mx-auto">
+        <div class="group w-64 mt-4 pt-0.5 pb-0.5 bg-cyan text-center tracking-wider overflow-hidden transition duration-300 rounded-sm
+                    hover:text-black hover:bg-gray-400">
+          <span
+            class="symbol block float-left text-3xl mt-1 ml-11 animate-spin-slow group-hover:animate-none group-hover:animate-from-below">S</span>
+          <h3 class="block float-right text-4xl mt-1.5 mr-16 transition duration-300 group-hover:animate-from-right">
+            TAILWIND</h3>
+        </div>
+      </div>
+
+      <!--Flex 1: divide el espacio equitativamente-->
+      <nav id="nav" class="flex-1">
+        <ul
+          class="flex flex-row h-20 items-center justify-end text-xl text-center xs:justify-center xs:text-lg xs:text-center">
+          <li class="menu-item">
+            <a class="menu-item-a" href="#">INICIO</a>
+          </li>
+
+          <li class="menu-item">
+            <a class="menu-item-a" href="#">BLOG</a>
+          </li>
+
+          <li class="menu-item">
+            <a class="menu-item-a" href="#">FORMACIÓN</a>
+          </li>
+
+          <li class="menu-item">
+            <a class="menu-item-a" href="#">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <!--Fin Cabecera-->
+
+  <!--Inicio Banner-->
+  <div class="container w-11/12 mx-auto">
+    <div id="banner"
+      class="h-28  border-8 border-white overflow-hidden bg-banner bg-banner-position m-5 animate-bg-banner xs:h-20">
+      <h1
+        class="block text-white text-5xl font-normal tracking-wider m-6 mx-auto text-center bebas shadow-banner md:text-4xl md:mt-8 xs:mt-5 xs:text-xl">
+        github.com/jagcweb/tailwind</h1>
+    </div>
+  </div>
+  <!--Fin Banner-->
+
+  <!--Inicio Tarjetas-->
+  <div class="container w-11/12 mx-auto">
+    <div id="cards" class="flex flex-row flex-nowrap justify-between md2:flex-wrap md2:flex-col md:flex-wrap md:flex-col xs:flex-wrap xs:flex-col">
+      <div class="card group">
+        <span class="card-icon group-hover:text-6xl group-hover:text-cyan group-hover:animate-show-card-icon">
+          H
+        </span>
+        <h2 class="card-category delay-100 group-hover:text-2xl group-hover:text-white">
+          Lorem ipsum
+        </h2>
+        <p class="card-desc group-hover:animate-show-card-desc  group-hover:text-white">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Vivamus vitae varius purus. Proin molestie rutrum lorem,
+        </p>
+      </div>
+
+      <div class="card group">
+        <span class="card-icon group-hover:text-6xl group-hover:text-cyan group-hover:animate-show-card-icon">
+          _
+        </span>
+        <h2 class="card-category delay-100 group-hover:text-2xl group-hover:text-white">
+          Lorem ipsum
+        </h2>
+        <p class="card-desc group-hover:animate-show-card-desc  group-hover:text-white">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Vivamus vitae varius purus. Proin molestie rutrum lorem,
+        </p>
+      </div>
+
+      <div class="card group">
+        <span class="card-icon group-hover:text-6xl group-hover:text-cyan group-hover:animate-show-card-icon">
+          S
+        </span>
+        <h2 class="card-category delay-100 group-hover:text-2xl group-hover:text-white">
+          Lorem ipsum
+        </h2>
+        <p class="card-desc group-hover:animate-show-card-desc  group-hover:text-white">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Vivamus vitae varius purus. Proin molestie rutrum lorem,
+        </p>
+      </div>
+
+      <div class="card group">
+        <span class="card-icon group-hover:text-6xl group-hover:text-cyan group-hover:animate-show-card-icon">
+          u
+        </span>
+        <h2 class="card-category delay-100 group-hover:text-2xl group-hover:text-white">
+          Lorem ipsum
+        </h2>
+        <p class="card-desc group-hover:animate-show-card-desc  group-hover:text-white">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Vivamus vitae varius purus. Proin molestie rutrum lorem,
+        </p>
+      </div>
+
+      <div class="card group">
+        <span class="card-icon transform group-hover:text-6xl group-hover:text-cyan group-hover:animate-show-card-icon">
+          a
+        </span>
+        <h2 class="card-category delay-100 group-hover:text-2xl group-hover:text-white">
+          Lorem ipsum
+        </h2>
+        <p class="card-desc group-hover:animate-show-card-desc group-hover:text-white">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Vivamus vitae varius purus. Proin molestie rutrum lorem,
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--Fin Tarjetas-->
+
+
+  <!--Inicio contenido-->
+  <main class="container w-11/12 mx-auto flex md2:flex-col">
+    <aside id="lateral" class="order-2 flex-none xl:w-3/12 mx-auto min-h-full mt-5 md2:w-full">
+      <h3 class="bebas bg-px-gray aside-header">BUSCAR</h3>
+      <div id="search" class="w-full h-28 bg-white shadow-lg mt-2">
+        <form class="flex flex-col">
+          <input type="text" class="border border-gray-700 w-11/12 h-8 rounded-md mx-auto mt-2"/>
+          <input type="submit" value="Buscar" class=" w-11/12 mx-auto h-10 bg-gray-900 mt-3 text-xl rounded-md cursor-pointer text-white">
+        </form>
+      </div>
+
+      <h3 class="bebas bg-px-gray aside-header mt-16">Acceder</h3>
+      <div id="login" class="w-full h-80 bg-white shadow-lg mt-2">
+        <form class="flex flex-col">
+          <label for="email" class=" w-11/12 mx-auto mt-2">Email:</label>
+          <input type="email" name="email" id="email" class="border border-gray-700 w-11/12 h-8 rounded-md mx-auto"/>
+          <label for="pass" class=" w-11/12 mx-auto mt-4">Contraseña</label>
+          <input type="password" name="pass" id="pass" class="border border-gray-700 w-11/12 h-8 rounded-md mx-auto"/>
+          <input type="submit" value="Acceder" class=" w-11/12 mx-auto h-10 bg-gray-900 mt-4 text-xl rounded-md cursor-pointer text-white">
+          <input type="reset" value="Limpiar" class=" w-11/12 mx-auto h-10 bg-gray-900 mt-2 text-xl rounded-md cursor-pointer text-white">
+
+          <a href="#" class="text-center mt-2 hover:underline">Registrarse</a>
+          <a href="#" class="text-center mt-2  hover:underline">¿Has olvidado tu contraseña?</a>
+        </form>
+      </div>
+
+      <h3 class="bebas bg-px-gray aside-header mt-16">Patrocinadores</h3>
+      <div id="patrocinadores" class="w-full h-36 bg-white shadow-lg mt-2">
+
+      </div>
+    </aside>
+
+    <section  class="flex-none xl:w-8/12 mx-auto order-1 mr-10 mt-5  md2:full">
+      <h2 class="bebas bg-px-gray last-articles">Ultimos artículos</h2>
+      <article class="article">
+        <div class="article-date">
+          <span>Fecha: 10/03/2021 16:17</span>
+        </div>
+
+        <h4 class="article-title">
+          <a href="#">Lorem ipsum</a>
+        </h4>
+
+        <p class="article-desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Vivamus vitae varius purus. Proin molestie rutrum lorem,
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Vivamus vitae varius purus. Proin molestie rutrum lorem,
+        </p>
+      </article>
+
+      <article class="article">
+        <div class="article-date">
+          <span>Fecha: 10/03/2021 16:17</span>
+        </div>
+
+        <h4 class="article-title">
+          <a href="#">Lorem ipsum</a>
+        </h4>
+
+        <p class="article-desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Vivamus vitae varius purus. Proin molestie rutrum lorem,
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Vivamus vitae varius purus. Proin molestie rutrum lorem,
+        </p>
+      </article>
+
+      <article class="article">
+        <div class="article-date">
+          <span>Fecha: 10/03/2021 16:17</span>
+        </div>
+
+        <h4 class="article-title">
+          <a href="#">Lorem ipsum</a>
+        </h4>
+
+        <p class="article-desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Vivamus vitae varius purus. Proin molestie rutrum lorem,
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Vivamus vitae varius purus. Proin molestie rutrum lorem,
+        </p>
+      </article>
+
+      <article class="article">
+        <div class="article-date">
+          <span>Fecha: 10/03/2021 16:17</span>
+        </div>
+
+        <h4 class="article-title">
+          <a href="#">Lorem ipsum</a>
+        </h4>
+
+        <p class="article-desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Vivamus vitae varius purus. Proin molestie rutrum lorem,
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Vivamus vitae varius purus. Proin molestie rutrum lorem,
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <!--Fin del contenido-->
+
+
+  <!--Footer-->
+  <footer class="h-28 bg-black mt-5">
+    <p class="text-center text-white text-xl pt-6">JAGCWEB - 2021</p>
+    <div class="lg:w-1/12 mx-auto flex flex-row justify-around mt-2 md2:w-2/12 xs:w-1/4">
+      <a href="https://github.com/jagcweb" target="_blank"><img src="./img/25231.png" class="w-8 md2:w-12 xs:w-16"/></a>
+      <a href="https://www.linkedin.com/in/jagcweb" target="_blank"><img src="./img/LinkedIn-Icon.png" class="w-8 md2:w-12 xs:w-16"/></a>
+      
+    </div>
+  </footer>
+
+  <!--Fin Footer-->
+</body>
+
+</html>

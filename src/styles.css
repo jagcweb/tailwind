@@ -1,0 +1,233 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    /*body{
+        background-image: url('../img/pattern.png');
+    }*/
+
+    /*FUENTES*/
+    @font-face{
+        font-family: "TrebuchetMS";
+        src: url('fonts/TrebuchetMS.ttf');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face{
+        font-family: "BebasNeue";
+        src: url('fonts/BebasNeue.otf');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face{
+        font-family: "WebSymbolsRegular";
+        src: url('fonts/websymbols-regular-webfont.eot');
+        src: url('fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+            url('fonts/websymbols-regular-webfont.woff') format('woff'),
+            url('fonts/websymbols-regular-webfont.ttf') format('truetype'),
+            url('fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    .symbol{
+        font-family: "WebSymbolsRegular";
+    }
+
+    .trebuchet{
+        font-family: "TrebuchetMS";
+    }
+
+    .bebas{
+        font-family: "BebasNeue";
+    }
+
+
+    
+}
+
+@layer components{
+    /* Menu */
+    .menu-item{
+        @apply 
+            mr-5 
+            ml-5 
+            tracking-wider 
+            flex-none
+            xs:flex-1
+            xs:ml-3
+            xs:mr-3
+        ;
+    }
+
+    .menu-item-a{
+        @apply block
+            transition
+            duration-300
+            hover:text-cyan
+            transform 
+            hover:scale-125
+        ;
+    }
+
+    /* Text shadow Banner */
+
+    .shadow-banner{
+        text-shadow: 2px 2px 1px black;
+    }
+
+
+    /* Tarjetas */
+
+    .card{
+        @apply
+            flex-1
+            h-72
+            border-2
+            border-gray-200
+            shadow-md
+            bg-white
+            overflow-hidden
+            m-5
+            p-5
+            cursor-pointer
+            transition
+            duration-300
+            hover:bg-black
+            lg:h-80
+            md2:h-80
+            md:h-80
+            xs:h-80
+        ;
+    }
+
+    .card-icon{
+        font-family: "WebSymbolsRegular";
+        @apply
+            block
+            w-full
+            h-20
+            text-5xl
+            text-center
+            mt-3
+            transition
+            duration-300
+        ;
+    }
+
+
+    .card-category{
+        @apply
+            block
+            w-full
+            h-12
+            text-xl
+            font-bold
+            text-center
+            text-azul-oscuro
+            transition
+            duration-300
+            lg:text-base
+            md2:text-lg
+            md:text-lg
+        ;
+    }
+
+    .card-desc{
+        font-family: "TrebuchetMS";
+        @apply
+            text-center
+            text-azul-oscuro
+            transition
+            duration-300
+            2xl:text-base
+            xl:text-sm
+            lg:text-xs
+            md2:text-xs
+            md:text-xs
+            xs:text-xs
+        ;
+    }
+
+
+    .last-articles{
+        @apply
+            w-full
+            h-20 
+            text-center 
+            text-4xl 
+            font-normal 
+            tracking-wider 
+            pt-5 
+            shadow-lg 
+            border
+        ;
+    }
+
+    .article{
+        @apply
+            w-full
+            h-auto
+            border
+            border-gray-200
+            mt-10
+            p-2.5
+            bg-white
+            text-black
+            shadow-md
+        ;
+    }
+
+    .article-date{
+        @apply
+            float-right 
+            bg-gray-900 
+            p-2
+            text-white 
+            -m-2.5 
+            text-sm 
+            rounded-bl-lg
+        ;
+    }
+
+    .article-title{
+        @apply
+            block
+            text-center
+            text-2xl
+            text-azul-oscuro
+            m-5
+            font-semibold
+            hover:underline
+        ;
+    }
+
+
+    .article-desc{
+        @apply
+            block
+            mt-3
+            mb-3
+            text-base
+            font-sans
+            font-normal
+            text-justify
+        ;
+    }
+
+    .aside-header{
+        @apply
+            block
+            h-11
+            shadow-lg
+            text-3xl
+            font-medium
+            tracking-wider
+            pl-3.5
+            pt-1
+        ;
+    }
+}

@@ -1,0 +1,147 @@
+--------Header---------
+
+Clases útiles:
+
+bg-scroll (no se mueve la img)
+flex-1: divide el espacio equitativamente
+
+
+Cargar fuentes: Pegas el font-face en styles css (del tailwind)
+
+y asignas una clase:
+
+.symbol{
+        font-family: "WebSymbolsRegular";
+    }
+
+y compilamos
+
+Añadir colores:
+
+En el tailwind config, en el extend:
+
+colors:{
+                "cyan":"#37bcf9",
+                "azul-oscuro":"#0370b9"
+            }
+
+
+Background-image:
+
+2 formas de hacerlo.
+
+1: (no recomendada) En el styles del SRC.
+
+@layer base {
+    /*body{
+        background-image: url('../img/pattern.png');
+    }*/
+
+}
+
+
+2: (recomendada)
+
+Crear tailwind.config.js
+
+module.exports = {
+    theme:{
+        extend:{
+            backgroundImage: theme =>({
+                "body-pattern" : "url('../img/pattern.png')"
+            })
+        }
+    },
+
+    variants: {
+
+    }
+}
+
+Con esto exportamos una nueva clase llamada body-pattern (sujeta a bg)
+
+class="bg-body-pattern" y listo.
+
+No repetir clases.
+
+Apply y componentes. en Styles , en @layer components{}
+
+Creamos una clase. ej: item
+
+.item{ 
+@apply mr-5 ml-5 tracking-wider flex-none
+}
+
+
+@apply 
+            mr-5 
+            ml-5 
+            tracking-wider 
+            flex-none
+        ;
+
+
+Animaciones
+
+https://tailwindcss.com/docs/animation
+
+Hovers en grupo (Tenemos un div, y dentro de este un span con una animación)
+
+metemos group en el div
+
+y en el span group-hover:animate-none
+
+(Cargar en variants, los animation y animate)
+animation: ['responsive', 'hover', 'group-hover'],
+        animate: ['responsive', 'hover', 'group-hover']
+
+
+Animaciones personalizadas
+
+Cargar keyframes y crear nuestra animacion rollo css
+
+keyframes:{
+                fromBelow:{
+                    '0%': {transform: 'translateY(0%)'},
+                    '50%': {transform: 'translateY(200%)'},
+                    '100%': {transform: 'translateY(0%)'}
+                }
+            }
+
+Luego ya dentro de animations creamos la clase y eso
+
+'from-below': 'fromBelow 0.5s linear'
+
+
+Responsive (en la doc)
+
+Personalizado:
+
+en extend:
+
+screens:{
+                'xs':{'max': '640px'}
+            },
+
+
+con xs:text-white aplicamos directivas sobre el XS. (por ej: text blanco)
+
+backgroundPosition:theme=>({
+                'banner-position': "-30px -140px;"
+            }),
+
+bg-banner-position
+
+
+crear CSS
+
+.shadow-banner{
+        text-shadow: 2px 2px 1px black;
+    } 
+
+en components
+
+Muchas veces group:hover no funciona y para hacer que si hay que meterlos en variants. Ejemplo con font-size:
+
+fontSize: ['responsive', 'hover', 'group-hover'],
+    }

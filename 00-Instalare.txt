@@ -1,0 +1,21 @@
+npm init
+
+npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+
+Creamos carpeta src y styles.css
+
+metemos:
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+npx tailwindcss build ./src/styles.css -o ./css/styles.css
+
+en package.json: en scripts, debajo de test:
+
+"build": "tailwindcss build ./src/styles.css -o ./css/styles.css"
+
+con npm run build seria todo ese comando de arriba
+
+extension tailwind intelliSense
